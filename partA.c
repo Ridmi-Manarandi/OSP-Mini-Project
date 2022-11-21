@@ -1,12 +1,15 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
+#include <stdio.h>//for input and output(for use printf function)
+#include <stdlib.h>//for use exit funtion
+#include <unistd.h>//related to fork functions
 #include <fcntl.h>
-#include <errno.h>
-#include <sys/wait.h>
+#include <errno.h>//related to error handlling
+#include <sys/types.h>//related to fork handlling functions
+#include <sys/wait.h>//related to wait funtion
 #include <sys/msg.h>
-#include <sys/stat.h>
-#include <string.h>
+#include <sys/stat.h>//related to msgflags
+#include <sys/ipc.h>//inter process communication with msg queues
+#include <sys/msg.h>//define many functions which are used in implementing msg queues
+#include <string.h>//copy string 
 //PARTA
 struct Student {//Declare the 
 
